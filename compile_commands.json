@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/abdelrahman/dev_work/include_test/build",
+  "command": "/usr/bin/c++ -DMyLib_EXPORTS -DCMAKE_INTDIR=\\\"Debug\\\" -I/home/abdelrahman/dev_work/include_test/src/../include -g -fPIC -o src/CMakeFiles/MyLib.dir/Debug/mylib.cpp.o -c /home/abdelrahman/dev_work/include_test/src/mylib.cpp",
+  "file": "/home/abdelrahman/dev_work/include_test/src/mylib.cpp"
+},
+{
+  "directory": "/home/abdelrahman/dev_work/include_test/build",
+  "command": "/usr/bin/c++ -DMyLib_EXPORTS -DCMAKE_INTDIR=\\\"Release\\\" -I/home/abdelrahman/dev_work/include_test/src/../include -O3 -DNDEBUG -fPIC -o src/CMakeFiles/MyLib.dir/Release/mylib.cpp.o -c /home/abdelrahman/dev_work/include_test/src/mylib.cpp",
+  "file": "/home/abdelrahman/dev_work/include_test/src/mylib.cpp"
+},
+{
+  "directory": "/home/abdelrahman/dev_work/include_test/build",
+  "command": "/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -I/home/abdelrahman/dev_work/include_test/src/../include -g -o src/CMakeFiles/MyApp.dir/Debug/main.cpp.o -c /home/abdelrahman/dev_work/include_test/src/main.cpp",
+  "file": "/home/abdelrahman/dev_work/include_test/src/main.cpp"
+},
+{
+  "directory": "/home/abdelrahman/dev_work/include_test/build",
+  "command": "/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -I/home/abdelrahman/dev_work/include_test/src/../include -O3 -DNDEBUG -o src/CMakeFiles/MyApp.dir/Release/main.cpp.o -c /home/abdelrahman/dev_work/include_test/src/main.cpp",
+  "file": "/home/abdelrahman/dev_work/include_test/src/main.cpp"
+}
+]

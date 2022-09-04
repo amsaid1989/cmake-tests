@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{903F7255-6862-38D8-98D3-325A63A4CE9F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\abdoo\dev\include_test\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/abdoo/dev/include_test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\bin\cmake.exe -SC:/Users/abdoo/dev/include_test -BC:/Users/abdoo/dev/include_test/build --check-stamp-file C:/Users/abdoo/dev/include_test/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CPack.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CPackComponent.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\InstallRequiredSystemLibraries.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Templates\CPackConfig.cmake.in;C:\Users\abdoo\dev\include_test\build\CMakeFiles\3.24.0\CMakeCCompiler.cmake;C:\Users\abdoo\dev\include_test\build\CMakeFiles\3.24.0\CMakeCXXCompiler.cmake;C:\Users\abdoo\dev\include_test\build\CMakeFiles\3.24.0\CMakeRCCompiler.cmake;C:\Users\abdoo\dev\include_test\build\CMakeFiles\3.24.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\abdoo\dev\include_test\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/abdoo/dev/include_test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\bin\cmake.exe -SC:/Users/abdoo/dev/include_test -BC:/Users/abdoo/dev/include_test/build --check-stamp-file C:/Users/abdoo/dev/include_test/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CPack.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\CPackComponent.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\InstallRequiredSystemLibraries.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;C:\Users\abdoo\Downloads\cmake-3.24.0-windows-x86_64\share\cmake-3.24\Templates\CPackConfig.cmake.in;C:\Users\abdoo\dev\include_test\build\CMakeFiles\3.24.0\CMakeCCompiler.cmake;C:\Users\abdoo\dev\include_test\build\CMakeFiles\3.24.0\CMakeCXXCompiler.cmake;C:\Users\abdoo\dev\include_test\build\CMakeFiles\3.24.0\CMakeRCCompiler.cmake;C:\Users\abdoo\dev\include_test\build\CMakeFiles\3.24.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\abdoo\dev\include_test\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\abdoo\dev\include_test\build\ZERO_CHECK.vcxproj">
+      <Project>{C044F859-F850-312D-89E2-6FAF11D7BD7E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\abdoo\dev\include_test\build\src\MyApp.vcxproj">
+      <Project>{E755DC1E-FD64-3096-A367-955EA04E1D72}</Project>
+      <Name>MyApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\abdoo\dev\include_test\build\src\MyLib.vcxproj">
+      <Project>{E72F0EAC-886A-3172-95F5-31CEF9C247DA}</Project>
+      <Name>MyLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

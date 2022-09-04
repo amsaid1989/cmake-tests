@@ -1,0 +1,31 @@
+#!/bin/bash
+
+CONFIG=""
+
+if [[ "$1" == "RELEASE" ]] || [[ "$1" == "Release" ]] || [[ "$1" == "release" ]]
+then
+	CONFIG="Release"
+elif [[ "$1" == "DEBUG" ]] || [[ "$1" == "Debug" ]] || [[ "$1" == "debug" ]]
+then
+	CONFIG="Debug"
+elif [[ "$1" == "INSTALL" ]] || [[ "$1" == "Install" ]] || [[ "$1" == "install" ]]
+then
+	CONFIG="Install"
+fi
+
+if [ "$CONFIG" != "" ]
+then
+	cd build
+
+	if [ "$CONFIG" == "Install" ]
+	then
+		cmake --install .
+	else
+		cmake .. -G "Ninja Multi-Config"
+		rm ../compile_commands.json
+		cp ${PWD}/compile_commands.json ../
+		cmake --build . --config "$CONFIG"
+	fi
+else
+	echo "You need to specify a build type (Debug/Release)"
+fi

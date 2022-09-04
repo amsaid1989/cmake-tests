@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/Users/abdoo/dev/include_test/src/CMakeLists.txt
+  mylib.cpp
+  Auto build dll exports
+     Creating library C:/Users/abdoo/dev/include_test/build/Release/lib/MyLib.lib and object C:/Users/abdoo/dev/include_test/build/Release/lib/MyLib.exp
+  MyLib.vcxproj -> C:\Users\abdoo\dev\include_test\build\Release\bin\MyLib.dll
